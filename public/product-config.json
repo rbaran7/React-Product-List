@@ -2,75 +2,75 @@
     "products": [
       {
         "id": 1,
-        "image": "https://via.placeholder.com/150/FF5733/FFFFFF?text=Logo1",
+        "image": "./starbucks-logo.png",
         "name": "Starbucks Holiday Blend Medium Roast Ground Coffee",
         "description": "Celebrate the season with holiday favorites that bring warmth and cheer to your cup. Starbucks Holiday Blend coffee has an elegant flavor with notes of sweet maple and herbs balanced with a medium acidity and body.",
         "metadata_tags": ["coffee", "Starbucks", "special"],
         "learn_more": "https://www.starbucks.com/",
-        "go": "https://www.target.com/p/starbucks-holiday-blend-medium-roast-ground-coffee-10oz"
+        "go": "https://www.target.com/p/starbucks-holiday-blend-medium-roast-ground-coffee-10oz/-/A-26400934"
       },
       {
         "id": 2,
-        "image": "https://via.placeholder.com/150/33FF57/FFFFFF?text=Logo2",
+        "image": "./starbucks-logo.png",
         "name": "Starbucks Pike Place Roast Medium Roast Whole Bean Coffee",
         "description": "Named for our first store in Seattle’s Pike Place Market, this coffee is served fresh every day in Starbucks cafés around the world.",
         "metadata_tags": ["coffee", "Starbucks", "classic"],
         "learn_more": "https://www.starbucks.com/",
-        "go": "https://www.target.com/p/starbucks-pike-place-roast-medium-roast-whole-bean-coffee-12oz"
+        "go": "https://www.target.com/p/starbucks-pike-place-roast-medium-roast-whole-bean-coffee-12oz/-/A-15061751"
       },
       {
         "id": 3,
-        "image": "https://via.placeholder.com/150/3357FF/FFFFFF?text=Logo3",
+        "image": "./dunkin-logo.png",
         "name": "Dunkin' Gingerbread Artificially Flavored Ground Coffee",
         "description": "Nothing beats the smell of freshly baked gingerbread cookies during the holidays. This season, you can experience that with each sip of Dunkin’ Gingerbread Artificially Flavored Coffee.",
         "metadata_tags": ["coffee", "Dunkin", "special"],
         "learn_more": "https://www.dunkindonuts.com/en",
-        "go": "https://www.target.com/p/dunkin-39-gingerbread-ground-coffee-11oz"
+        "go": "https://www.target.com/p/dunkin-39-gingerbread-ground-coffee-11oz/-/A-92282351"
       },
       {
         "id": 4,
-        "image": "https://via.placeholder.com/150/FFFF33/000000?text=Logo4",
+        "image": "./starbucks-logo.png",
         "name": "Starbucks Veranda Light Roast Ground Coffee",
         "description": "We’ve spent decades working with coffee farmers throughout Latin America. This blend was inspired by the lightly roasted coffees we’ve sipped together over the years, often enjoyed on a breezy veranda with a view of lush coffee trees.",
         "metadata_tags": ["coffee", "Starbucks", "classic"],
         "learn_more": "https://www.starbucks.com/",
-        "go": "https://www.target.com/p/starbucks-veranda-light-roast-ground-coffee"
+        "go": "https://www.target.com/p/starbucks-veranda-light-roast-ground-coffee/-/A-89169597?preselect=83745607"
       },
       {
         "id": 5,
-        "image": "https://via.placeholder.com/150/FF33FF/FFFFFF?text=Logo5",
+        "image": "./dunkin-logo.png",
         "name": "Dunkin' Donuts Polar Peppermint Artificially Flavored Medium Roast Ground Coffee",
         "description": "Celebrate the magic of the season with Dunkin’ Polar Peppermint artificially flavored white chocolate peppermint coffee. The flavor notes of white chocolate and peppermint will take your taste buds on a sleigh ride with every sip. The ground coffee form makes it easy to brew by the cup or the pot with virtually any coffee maker — perfect for enjoying the great taste of Dunkin’ at home. Plus, you can add your favorite creamers and sweeteners so that your cup tastes just the way you like it. So, get festive and enjoy this limited-edition holiday coffee before it makes its way back to the North Pole!",
         "metadata_tags": ["coffee", "Dunkin", "special"],
         "learn_more": "https://www.dunkindonuts.com/en",
-        "go": "https://www.target.com/p/dunkin-39-donuts-polar-peppermint-medium-roast-ground-coffee-11oz"
+        "go": "https://www.target.com/p/dunkin-39-donuts-polar-peppermint-medium-roast-ground-coffee-11oz/-/A-47995719"
       },
       {
         "id": 6,
-        "image": "https://via.placeholder.com/150/33FFFF/000000?text=Logo6",
+        "image": "./dunkin-logo.png",
         "name": "Dunkin' Donuts Extra Extra Vanilla Coffee Creamer",
         "description": "When no other Vanilla will do, bring home Dunkin’ French Vanilla Coffee Creamer. Inspired by Dunkin’ French Vanilla Swirl Latte, Dunkin’ French Vanilla flavored coffee creamer liquid makes crafting an unreal cup of coffee at home easy.",
         "metadata_tags": ["creamer", "Dunkin", "classic"],
         "learn_more": "https://www.dunkindonuts.com/en",
-        "go": "https://www.target.com/p/dunkin-39-donuts-extra-extra-vanilla-coffee-creamer-32-fl-oz"
+        "go": "https://www.target.com/p/dunkin-39-donuts-extra-extra-vanilla-coffee-creamer-32-fl-oz/-/A-87543347"
       },
       {
         "id": 7,
-        "image": "https://via.placeholder.com/150/FF8833/FFFFFF?text=Logo7",
+        "image": "./starbucks-logo.png",
         "name": "Starbucks Sugar Cookie Non Dairy Creamer",
         "description": "Indulge in holiday joy with Starbucks Non-dairy Sugar Cookie Latte Flavored Coffee Creamer. Exclusively designed for all coffee lovers, our sugar cookie flavored creamer is inspired by the Iconic Starbucks Sugar Cookie Latte.",
         "metadata_tags": ["creamer", "Starbucks", "special"],
         "learn_more": "https://www.starbucks.com/",
-        "go": "https://www.target.com/p/starbucks-160-sugar-cookie-non-dairy-creamer-28-fl-oz"
+        "go": "https://www.target.com/p/starbucks-160-sugar-cookie-non-dairy-creamer-28-fl-oz/-/A-91895893"
       },
       {
         "id": 8,
-        "image": "https://via.placeholder.com/150/8833FF/FFFFFF?text=Logo8",
+        "image": "./starbucks-logo.png",
         "name": "Starbucks Peppermint Mocha Coffee Creamer",
         "description": "Indulge in holiday joy with Starbucks Peppermint Mocha Flavored Coffee Creamer. Exclusively designed for all coffee lovers, our peppermint mocha creamer is inspired by the Iconic Starbucks Peppermint Mocha Latte.",
         "metadata_tags": ["creamer", "Starbucks", "special"],
         "learn_more": "https://www.starbucks.com/",
-        "go": "https://www.target.com/p/starbucks-160-peppermint-mocha-coffee-creamer-28-fl-oz"
+        "go": "https://www.target.com/p/starbucks-160-peppermint-mocha-coffee-creamer-28-fl-oz/-/A-91895890"
       }
     ]
   }
