@@ -6,7 +6,7 @@ React and Material UI (https://mui.com/) were used in the creation of this proje
 
 # Configuration File
 
-The file which drives the product list is found in this directory `public/product-config.json`. Since this project is a demonstration of React and its functions, placing the configuration file in the public directory is assumed to be okay. In doing this, a user can add / remove any value from this configuration file assuming they are following configuration contract (see below). When a user adds / removes values from the configuration file, the application does not need to be manually shutdown and restarted to see the changes.
+The file which drives the product list is found in this directory `public/product-config.json`. Since this project is a demonstration of React and its functions, placing the configuration file in the public directory is assumed to be okay. In doing this, a user can add / remove any value from this configuration file assuming they are following the configuration contract (see below). When a user adds / removes values from the configuration file, the application does not need to be manually shutdown and restarted to see the changes.
 
 # Configuration File Contract
 
@@ -14,15 +14,19 @@ The project configuration file supports the following contractual format. If you
 
 `products: [{}]` - an array of product objects
 
-{
-    `id` - integer
-    `image` - can be a path to an image stored in the project's directories or a valid image URL
-    `name` - string
-    `description` - string
-    `metadata_tags` - array of strings ["", "", ...]
-    `learn_more` - string (should be a valid URL)
-    `go` -  string (should be a valid URL)
-}
+`id` - integer
+
+`image` - can be a path to an image stored in the project's directories or a valid image URL
+
+`name` - string
+
+`description` - string
+
+`metadata_tags` - array of strings `["", "", ...]`
+
+`learn_more` - string (should be a valid URL)
+
+`go` -  string (should be a valid URL)
 
 ## Running the Application
 
