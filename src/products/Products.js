@@ -54,7 +54,7 @@ const Products = (productData) => {
     );
 
     return (
-        <div className="margin-top-8 center-vert-list">
+        <div className="margin-top-2 center-vert-list">
             { products }
         </div>
     )
