@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import FormControl from '@mui/material/FormControl';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import MenuItem from '@mui/material/MenuItem';
-import ListItemText from '@mui/material/ListItemText';
-import InputLabel from '@mui/material/InputLabel';
-import Select from '@mui/material/Select';
-import Checkbox from '@mui/material/Checkbox';
-import Button from '@mui/material/Button';
-import Products from './Products';
-import Loading from '../shared/Loading';
+import React, { useState, useEffect } from "react";
+import FormControl from "@mui/material/FormControl";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import MenuItem from "@mui/material/MenuItem";
+import ListItemText from "@mui/material/ListItemText";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
+import Products from "./Products";
+import Loading from "../shared/Loading";
 
 const ProductsParent = () => {    
     const [productData, setProductData] = useState(null);
@@ -16,37 +16,35 @@ const ProductsParent = () => {
     const [activeFilter, setActiveFilter] = useState([]);
 
     const productConfig = async () => {
-        const response = await fetch('product-config.json');
+        const response = await fetch("product-config.json");
         const jsonData = await response.json();
 
         generateFilters(jsonData.products);
         setProductData(jsonData.products);
-    }
+    };
 
     /**
-     * @param {Array} filteredData 
+     * @param { Array } filteredData 
      */
     const generateFilters = (filteredData) => {
         const mergedFilterArray = [];
 
         for (let i = 0; i < filteredData.length; i++) {
-            mergedFilterArray.push(filteredData[i].metadata_tags)
+            mergedFilterArray.push(filteredData[i].metadata_tags);
         }
 
-        const flattenedFilters = mergedFilterArray.flat();
-        const uniqueFilterSet = new Set(flattenedFilters);
-        const uniqueFilterArray = Array.from(uniqueFilterSet);
+        const uniqueFilterArray = Array.from(new Set(mergedFilterArray.flat()));
 
-        setProductFilters(uniqueFilterArray)
+        setProductFilters(uniqueFilterArray);
     };
 
     /**
-     * @param {ChangeEvent<T>} event 
+     * @param { ChangeEvent<T> } event 
      */
     const handleChange = (event) => {
         const { target: { value }, } = event;
         
-        setActiveFilter(
+        setActiveFilter (
           typeof value === 'string' ? value.split(',') : value,
           filterProducts(value)
         );
@@ -55,10 +53,10 @@ const ProductsParent = () => {
     /**
      * This client side filter is assuming an OR functionality when multiple filter values are present
      * 
-     * @param {Array} filterValue 
+     * @param { Array } filterValue 
      */
     const filterProducts = (filterValue) => {
-        const filteredProductData = []
+        const filteredProductData = [];
 
         for (let i = 0; i < productData.length; i++) {
             for (const value of filterValue) {
@@ -67,10 +65,10 @@ const ProductsParent = () => {
                 }
             }
         }
-        const uniqueFilterSet = new Set(filteredProductData);
-        const uniqueFilterArray = Array.from(uniqueFilterSet);
+        
+        const uniqueProductData = Array.from(new Set(filteredProductData));
 
-        filteredProductData.length ? setProductData(uniqueFilterArray) : productConfig();
+        filteredProductData.length ? setProductData(uniqueProductData) : productConfig();
     }
 
     const clearAllFilters = () => {
@@ -78,6 +76,9 @@ const ProductsParent = () => {
         productConfig();
     }
 
+    /**
+     * Get products on initilization
+     */
     useEffect(() => {
         productConfig();
     }, []);
@@ -86,7 +87,7 @@ const ProductsParent = () => {
         productData ? 
         <>
             <div className="center-vert-list margin-top-12">
-                <FormControl sx={{ m: 2, width: '50%' }}>
+                <FormControl sx={{ m: 2, width: "50%" }}>
                     <InputLabel id="product-filter-label">Filter Products</InputLabel>
                     <Select
                         labelId="product-filter-label"
@@ -95,7 +96,7 @@ const ProductsParent = () => {
                         value={ activeFilter }
                         onChange={ handleChange }
                         input={ <OutlinedInput label="Filter Products" />}
-                        renderValue={ (selected) => selected.join(', ') }
+                        renderValue={ (selected) => selected.join(", ") }
                     >
                     { 
                         productFilters.map((filter, index) => (
@@ -111,7 +112,7 @@ const ProductsParent = () => {
                     activeFilter.length ? 
                     (
                         <Button 
-                            sx={{ color: "#346E21", fontWeight: 600, marginRight: 1, '&:hover': { backgroundColor: "#E5F6DF"} }}
+                            sx={{ color: "#346E21", fontWeight: 600, marginRight: 1, "&:hover": { backgroundColor: "#E5F6DF"} }}
                             variant="text"
                             onClick={ () => clearAllFilters() }>
                                 Clear All Filters
